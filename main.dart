@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
       home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
@@ -39,8 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
         
         backgroundColor: Color.fromRGBO(24, 120, 83, 1),
         title: Text("HackPack",
-        style: GoogleFonts.getFont('JetBrains Mono'),
-        
+        style: TextStyle(fontFamily: "JetBrains Mono", color: Colors.white),
         ),
         actions: [
           Container(
@@ -49,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
             decoration: BoxDecoration(
               border: Border.all(color: Colors.black)
             ),
-            child: IconButton(onPressed: (){}, icon: Icon(Icons.auto_awesome)),
+            child: IconButton(onPressed: (){}, icon: Icon(Icons.account_circle, size: 40)),
           )
         ],
       ),
