@@ -27,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(12,58,29,1),
+      backgroundColor: Color.fromRGBO(12, 58, 29, 1),
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(24, 120, 83, 1),
         title: Text(
@@ -46,14 +46,26 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      body: 
-      ListView(
-        
+      body: ListView(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
+            children: [
+              SizedBox(
+                width: 15,
+                height: 15,
+              ),
+
+              MaterialButton(
+                onPressed: () {},
+                color: Color.fromRGBO(33, 211, 161, 1),
+                shape: StadiumBorder(),
+                splashColor: Color.fromRGBO(33, 163, 115, 1),
+                disabledColor: Color.fromRGBO(33, 211, 161, 1),
+                minWidth: 60,
+                height: 18,
+                child: Text("Одежда", style: TextStyle(fontSize: 16, color: Colors.white)),
+              ),
+            ],
           ),
         ],
       ),
