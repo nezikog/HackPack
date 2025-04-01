@@ -47,24 +47,31 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: ListView(
-        children: [
-          Row(
-            children: [
-              SizedBox(
-                width: 15,
-                height: 15,
-              ),
+        
+        padding: EdgeInsets.only(top: 2),
 
-              MaterialButton(
-                onPressed: () {},
-                color: Color.fromRGBO(33, 211, 161, 1),
-                shape: StadiumBorder(),
-                splashColor: Color.fromRGBO(33, 163, 115, 1),
-                disabledColor: Color.fromRGBO(33, 211, 161, 1),
-                minWidth: 60,
-                height: 18,
-                child: Text("Одежда", style: TextStyle(fontSize: 16, color: Colors.white)),
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Text(
+                "Одежда",
+                style: TextStyle(fontSize: 38, color: Colors.white,
+                 decoration: TextDecoration.underline,
+                 decorationColor: Color.fromRGBO(33, 211, 161, 1),
+                 decorationStyle: TextDecorationStyle.dashed,
+                 decorationThickness: 2,),
               ),
+              Container(
+                width: 130,
+                height: 175,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(33, 211, 161, 1),
+                  borderRadius: BorderRadius.all(Radius.circular(16)),
+                ),
+              )
             ],
           ),
         ],
