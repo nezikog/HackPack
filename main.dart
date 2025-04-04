@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,36 +47,132 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      body: ListView(
-        
-        padding: EdgeInsets.only(top: 2),
-
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Text(
-                "Одежда",
-                style: TextStyle(fontSize: 38, color: Colors.white,
-                 decoration: TextDecoration.underline,
-                 decorationColor: Color.fromRGBO(33, 211, 161, 1),
-                 decorationStyle: TextDecorationStyle.dashed,
-                 decorationThickness: 2,),
-              ),
-              Container(
-                width: 130,
-                height: 175,
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(33, 211, 161, 1),
-                  borderRadius: BorderRadius.all(Radius.circular(16)),
+      body: GridView.count(
+        primary: false,
+        padding: const EdgeInsets.fromLTRB(5, 10, 5, 5),
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 20,
+        crossAxisCount: 1,
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Одежда"),
                 ),
-              )
-            ],
+                Container(
+                  width: 50,
+                  height: 50,
+                  child: SvgPicture.asset(""), //скругленные края, середина, белая обводка.
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 265, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text("Click", style: TextStyle(fontSize: 20)),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: const Text('Heed not the rabble'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: const Text('Sound of screams but the'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: const Text('Who scream'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: const Text('Revolution is coming...'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: const Text('Revolution, they...'),
           ),
         ],
       ),
+      // ListView(
+      //   padding: EdgeInsets.only(top: 2),
+
+      //   children: [
+      //     Column(
+      //       mainAxisAlignment: MainAxisAlignment.center,
+      //       crossAxisAlignment: CrossAxisAlignment.center,
+      //       mainAxisSize: MainAxisSize.max,
+      //       children: [
+      //         Text(
+      //           "Одежда",
+      //           style: TextStyle(
+      //             fontSize: 38,
+      //             color: Colors.white,
+      //             decoration: TextDecoration.underline,
+      //             decorationColor: Color.fromRGBO(33, 211, 161, 1),
+      //             decorationStyle: TextDecorationStyle.dashed,
+      //             decorationThickness: 2,
+      //           ),
+      //         ),
+
+      //         Stack(
+      //           children: [
+      //             Container(
+      //               // margin: EdgeInsets.fromLTRB(0.0, 5.0, 30.0, 0.0),
+      //               // padding: EdgeInsets.all(26),
+      //               width: 400,
+      //               height: 300,
+      //               decoration: BoxDecoration(
+      //                 color: Color.fromRGBO(33, 211, 161, 1),
+      //                 borderRadius: BorderRadius.all(Radius.circular(16)),
+      //               ),
+      //               alignment: Alignment.topLeft,
+      //               child: Container(
+      //                 width: 114,
+      //                 height: 118,
+      //                 child: SvgPicture.asset("assets/it.svg", semanticsLabel: "SVG From assets folder",), //Отредактировать чтобы был на середине с белой обводкой и скругленными краями. Также подключить прямоугольно/квадратное изображение
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //       ],
+      //     ),
+      //   ],
+      // ),
     );
   }
 }
