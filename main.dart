@@ -65,13 +65,31 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
                   child: Text("Категория: Одежда"),
                 ),
-                Container(
-                  width: 50,
-                  height: 50,
-                  child: SvgPicture.asset(""), //скругленные края, середина, белая обводка.
+                
+                Container(width: 180, height: 180,
+                margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
+                child: SvgPicture.asset("assets/it.svg"),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(5, 265, 0, 0),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  alignment: Alignment.topCenter,
+                  child: Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                    )
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
                   child: MaterialButton(
                     onPressed: () {},
                     color: Colors.white,
@@ -80,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     disabledColor: Color.fromRGBO(12, 58, 29, 1),
                     minWidth: 300,
                     height: 20,
-                    child: Text("Click", style: TextStyle(fontSize: 20)),
+                    child: Text("Добавить в корзину", style: TextStyle(fontSize: 20)), //если корзина не получится сделать просто
                   ),
                 ),
               ],
@@ -92,7 +110,50 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.all(Radius.circular(16)),
               color: Color.fromRGBO(33, 211, 161, 1),
             ),
-            child: const Text('Heed not the rabble'),
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Одежда"),
+                ),
+                
+                Container(width: 180, height: 180,
+                margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
+                child: SvgPicture.asset("assets/it.svg"),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  alignment: Alignment.topCenter,
+                  child: Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                    )
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text("Добавить в корзину", style: TextStyle(fontSize: 20)), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
             padding: const EdgeInsets.all(8),
@@ -100,7 +161,50 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.all(Radius.circular(16)),
               color: Color.fromRGBO(33, 211, 161, 1),
             ),
-            child: const Text('Sound of screams but the'),
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Одежда"),
+                ),
+                
+                Container(width: 180, height: 180,
+                margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
+                child: SvgPicture.asset("assets/it.svg"),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  alignment: Alignment.topCenter,
+                  child: Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                    )
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text("Добавить в корзину", style: TextStyle(fontSize: 20)), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
             padding: const EdgeInsets.all(8),
@@ -108,7 +212,50 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.all(Radius.circular(16)),
               color: Color.fromRGBO(33, 211, 161, 1),
             ),
-            child: const Text('Who scream'),
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Одежда"),
+                ),
+                
+                Container(width: 180, height: 180,
+                margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
+                child: SvgPicture.asset("assets/it.svg"),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  alignment: Alignment.topCenter,
+                  child: Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                    )
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text("Добавить в корзину", style: TextStyle(fontSize: 20)), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
             padding: const EdgeInsets.all(8),
@@ -116,7 +263,50 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.all(Radius.circular(16)),
               color: Color.fromRGBO(33, 211, 161, 1),
             ),
-            child: const Text('Revolution is coming...'),
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Одежда"),
+                ),
+                
+                Container(width: 180, height: 180,
+                margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
+                child: SvgPicture.asset("assets/it.svg"),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  alignment: Alignment.topCenter,
+                  child: Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                    )
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text("Добавить в корзину", style: TextStyle(fontSize: 20)), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
             padding: const EdgeInsets.all(8),
@@ -124,7 +314,50 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.all(Radius.circular(16)),
               color: Color.fromRGBO(33, 211, 161, 1),
             ),
-            child: const Text('Revolution, they...'),
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Одежда"),
+                ),
+                
+                Container(width: 180, height: 180,
+                margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
+                child: SvgPicture.asset("assets/it.svg"),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  alignment: Alignment.topCenter,
+                  child: Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                    )
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text("Добавить в корзину", style: TextStyle(fontSize: 20)), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
