@@ -113,12 +113,13 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Stack(
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
                   child: Text("Категория: Одежда"),
                 ),
                 
                 Container(width: 180, height: 180,
-                margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
+                alignment: Alignment.center,
+                // margin: EdgeInsets.fromLTRB(65, 30, 0, 0),
                 child: SvgPicture.asset("assets/it.svg"),
                 ),
                 Container(
@@ -130,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
                   width: 300,
                   height: 55,
-                  alignment: Alignment.topCenter,
+                  alignment: Alignment.center,
                   child: Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
                     
                     style: TextStyle(
@@ -140,7 +141,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
+                  // margin: EdgeInsets.fromLTRB(5, 270, 0, 0),
+                  alignment: Alignment.bottomCenter,
                   child: MaterialButton(
                     onPressed: () {},
                     color: Colors.white,
