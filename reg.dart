@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -8,11 +7,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
- 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
   }
@@ -21,182 +19,135 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
- 
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
- 
-  
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
-      backgroundColor: Color.fromRGBO(12, 58, 29, 1),
+      backgroundColor: const Color.fromRGBO(15, 101, 64, 1),
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(12, 58, 29, 1),
+        backgroundColor: const Color.fromRGBO(24, 120, 83, 1),
+        title: const Text(
+          "HackPack",
+          style: TextStyle(fontFamily: "JetBrains", color: Colors.white),
+        ),
       ),
       body: Center(
-       
-        child: Column(
-          
-          children: <Widget>[
-    Column(
-              children: [
-                
-                Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-  'Создайте аккаунт',
-  textAlign: TextAlign.start,
-  style: TextStyle(
-        fontFamily: 'Inter Tight',
-        letterSpacing: 0.0,
-        fontSize: 30,
-        color: Colors.white
-      ),
-)
-              ],
-            ),
-            Padding(
-  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
-  child: Container(
-    width: double.infinity,
-    child: TextFormField(
-      autofocus: true,
-      autofillHints: [AutofillHints.email],
-      obscureText: false,
-      decoration: InputDecoration(
-        labelText: 'Email',
-        labelStyle: TextStyle(
-              fontFamily: 'Inter',
-              letterSpacing: 0.0,
-
-            ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 5,
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: Text(
+                  'Создайте аккаунт',
+                  style: TextStyle(
+                    fontFamily: 'Inter Tight',
+                    letterSpacing: 0.0,
+                    fontSize: 30,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+                child: TextFormField(
+                  autofocus: true,
+                  autofillHints: const [AutofillHints.email],
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    labelText: 'Email',
+                    labelStyle: const TextStyle(
+                      fontFamily: 'Inter',
+                      letterSpacing: 0.0,
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
                         color: Color.fromRGBO(33, 211, 161, 1),
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 5,
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
                         color: Color.fromRGBO(33, 211, 161, 1),
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 5,
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    filled: true,
+                    fillColor: Colors.white,
+                  ),
+                  style: const TextStyle(
+                    fontFamily: 'Inter',
+                    letterSpacing: 0.0,
+                  ),
+                  keyboardType: TextInputType.emailAddress,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+                child: TextFormField(
+                  autofocus: true,
+                  autofillHints: const [AutofillHints.password],
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Password',
+                    labelStyle: const TextStyle(
+                      fontFamily: 'Inter',
+                      letterSpacing: 0.0,
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
                         color: Color.fromRGBO(33, 211, 161, 1),
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
+                        color: Color.fromRGBO(33, 211, 161, 1),
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    filled: true,
+                    fillColor: Colors.white,
+                    suffixIcon: IconButton(
+                      icon: const Icon(Icons.visibility_outlined),
+                      color: Colors.grey,
+                      onPressed: () {},
+                    ),
+                  ),
+                  style: const TextStyle(
+                    fontFamily: 'Inter',
+                    letterSpacing: 0.0,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: MaterialButton(
+                  onPressed: () {},
+                  color: Colors.white,
+                  shape: const StadiumBorder(),
+                  splashColor: const Color.fromRGBO(24, 120, 83, 1),
+                  minWidth: 200,
+                  height: 50,
+                  child: const Text(
+                    "Создать",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+              ),
+            ],
           ),
-          borderRadius: BorderRadius.circular(12),
         ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 5,
-            color: Color.fromRGBO(33, 211, 161, 1),
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        filled: true,
-        fillColor: Colors.white,
-        
       ),
-      style: TextStyle(
-            fontFamily: 'Inter',
-            letterSpacing: 0.0,
-          ),
-      keyboardType: TextInputType.emailAddress,
-    ),
-  ),
-),
-Padding(
-  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
-  child: Container(
-    width: double.infinity,
-    child: TextFormField(
-      autofocus: true,
-      autofillHints: [AutofillHints.password],
-      decoration: InputDecoration(
-        labelText: 'Password',
-        labelStyle: TextStyle (
-              fontFamily: 'Inter',
-              letterSpacing: 0.0,
-                      
-            ),
-        enabledBorder: OutlineInputBorder(
-          
-          borderSide: BorderSide(
-            width: 5,
-                        color: Color.fromRGBO(33, 211, 161, 1)
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 5,
-                        color: Color.fromRGBO(33, 211, 161, 1)
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 5,
-            color: Color.fromRGBO(33, 211, 161, 1)
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 5,
-                        color: Color.fromRGBO(33, 211, 161, 1)
-          ),
-          borderRadius: BorderRadius.circular(12),
-          
-        ),
-        filled: true,
-        
-        contentPadding: EdgeInsets.all(24),
-        suffixIcon: InkWell(
-          onTap: () => (
-          ),
-          focusNode: FocusNode(skipTraversal: true),
-          child: Icon(
-
-                 Icons.visibility_outlined,
-            size: 24,
-            color: Colors.white,
-          ),
-        ),
-                fillColor: Colors.white,
-      ),
-      style: TextStyle(
-            fontFamily: 'Inter',
-            letterSpacing: 0.0,
-          ),
-    ),
-  ),
-),
-Padding(padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-      child: ElevatedButton(onPressed: (){ print("Clicked!!!");}, child: Text("Создать", style: TextStyle(fontSize: 22)),
-      style: ButtonStyle(
-        backgroundColor: Color.fromRGBO(35, 211, 162, 1),
-      ),
-      ),
-)
-              ],
-            ), 
-         
-           
-          ]
-        )
-      )
     );
   }
 }
