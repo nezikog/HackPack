@@ -24,6 +24,46 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final _formKey = GlobalKey<FormState>();
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+  bool _obscurePassword = true;
+
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+  }
+
+  String? _validateEmail(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Пожалуйста, введите email';
+    }
+    if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
+      return 'Введите корректный email';
+    }
+    return null;
+  }
+
+  String? _validatePassword(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Пожалуйста, введите пароль';
+    }
+    if (value.length < 6) {
+      return 'Пароль должен быть не менее 6 символов';
+    }
+    return null;
+  }
+
+  void _submitForm() {
+    if (_formKey.currentState!.validate()) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Регистрация успешна!')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,116 +78,162 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Padding(
-                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                child: Text(
-                  'Создайте аккаунт',
-                  style: TextStyle(
-                    fontFamily: 'Inter Tight',
-                    letterSpacing: 0.0,
-                    fontSize: 30,
+          child: Form(
+            key: _formKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Text(
+                    'Создайте аккаунт',
+                    style: TextStyle(
+                      fontFamily: 'Inter Tight',
+                      letterSpacing: 0.0,
+                      fontSize: 30,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+                  child: TextFormField(
+                    controller: _emailController,
+                    autofocus: true,
+                    autofillHints: const [AutofillHints.email],
+                    obscureText: false,
+                    validator: _validateEmail,
+                    decoration: InputDecoration(
+                      labelText: 'Email',
+                      labelStyle: const TextStyle(
+                        fontFamily: 'Inter',
+                        letterSpacing: 0.0,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Color.fromRGBO(33, 211, 161, 1),
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Color.fromRGBO(33, 211, 161, 1),
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      errorBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Colors.red,
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      focusedErrorBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Colors.red,
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      filled: true,
+                      fillColor: Colors.white,
+                    ),
+                    style: const TextStyle(
+                      fontFamily: 'Inter',
+                      letterSpacing: 0.0,
+                    ),
+                    keyboardType: TextInputType.emailAddress,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+                  child: TextFormField(
+                    controller: _passwordController,
+                    autofocus: false, // Changed to false to avoid double autofocus
+                    autofillHints: const [AutofillHints.password],
+                    obscureText: _obscurePassword,
+                    validator: _validatePassword,
+                    decoration: InputDecoration(
+                      labelText: 'Password',
+                      labelStyle: const TextStyle(
+                        fontFamily: 'Inter',
+                        letterSpacing: 0.0,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Color.fromRGBO(33, 211, 161, 1),
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Color.fromRGBO(33, 211, 161, 1),
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      errorBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Colors.red,
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      focusedErrorBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Colors.red,
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      filled: true,
+                      fillColor: Colors.white,
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          _obscurePassword
+                              ? Icons.visibility_outlined
+                              : Icons.visibility_off_outlined,
+                          color: Colors.grey,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _obscurePassword = !_obscurePassword;
+                          });
+                        },
+                      ),
+                    ),
+                    style: const TextStyle(
+                      fontFamily: 'Inter',
+                      letterSpacing: 0.0,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: MaterialButton(
+                    onPressed: (){  Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen()));},
                     color: Colors.white,
+                    shape: const StadiumBorder(),
+                    splashColor: const Color.fromRGBO(24, 120, 83, 1),
+                    minWidth: 200,
+                    height: 50,
+                    child: const Text(
+                      "Создать",
+                      style: TextStyle(fontSize: 20),
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
-                child: TextFormField(
-                  autofocus: true,
-                  autofillHints: const [AutofillHints.email],
-                  obscureText: false,
-                  decoration: InputDecoration(
-                    labelText: 'Email',
-                    labelStyle: const TextStyle(
-                      fontFamily: 'Inter',
-                      letterSpacing: 0.0,
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        width: 2,
-                        color: Color.fromRGBO(33, 211, 161, 1),
-                      ),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        width: 2,
-                        color: Color.fromRGBO(33, 211, 161, 1),
-                      ),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
-                  ),
-                  style: const TextStyle(
-                    fontFamily: 'Inter',
-                    letterSpacing: 0.0,
-                  ),
-                  keyboardType: TextInputType.emailAddress,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
-                child: TextFormField(
-                  autofocus: true,
-                  autofillHints: const [AutofillHints.password],
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    labelText: 'Password',
-                    labelStyle: const TextStyle(
-                      fontFamily: 'Inter',
-                      letterSpacing: 0.0,
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        width: 2,
-                        color: Color.fromRGBO(33, 211, 161, 1),
-                      ),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        width: 2,
-                        color: Color.fromRGBO(33, 211, 161, 1),
-                      ),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
-                    suffixIcon: IconButton(
-                      icon: const Icon(Icons.visibility_outlined),
-                      color: Colors.grey,
-                      onPressed: () {},
-                    ),
-                  ),
-                  style: const TextStyle(
-                    fontFamily: 'Inter',
-                    letterSpacing: 0.0,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: MaterialButton(
-                  onPressed: () {},
-                  color: Colors.white,
-                  shape: const StadiumBorder(),
-                  splashColor: const Color.fromRGBO(24, 120, 83, 1),
-                  minWidth: 200,
-                  height: 50,
-                  child: const Text(
-                    "Создать",
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
+      
     );
+    
   }
 }
+
