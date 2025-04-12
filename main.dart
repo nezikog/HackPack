@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто
                   ),
@@ -177,7 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -242,7 +242,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -307,7 +307,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -372,7 +372,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -437,7 +437,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -502,7 +502,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -567,7 +567,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -632,7 +632,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -697,7 +697,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -762,7 +762,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -827,7 +827,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
@@ -851,7 +851,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                   alignment: Alignment.topRight,
                   child: Text(
-                    "Архитетура \n видеоигровых \n миров.",
+                    "Архитетура\nвидеоигровых\nмиров.",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ),
@@ -892,7 +892,528 @@ class _MyHomePageState extends State<MyHomePage> {
                     minWidth: 300,
                     height: 20,
                     child: Text(
-                      "Добавить в корзину",
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Устройства"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Raspberry Pi 5.",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Устройства"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Arduino. UNO.",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Аксессуары"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Кейкап.",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Устройства"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Брелок. Кейкап",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Аксессуары"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Брелок.Мини-\nэлектронная\nклавиатура.",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+            
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Аксессуары"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Держатель\nпроводов.",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Прочее"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Кружка. Хаос,\nстресс и 1С",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
+                      style: TextStyle(fontSize: 20),
+                    ), //если корзина не получится сделать просто купить
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              color: Color.fromRGBO(33, 211, 161, 1),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
+                  child: Text("Категория: Прочее"),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  alignment: Alignment.topRight,
+                  child: Text(
+                    "Постер.Я понял\nрекурсию",
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+                Container(
+                  width: 180,
+                  height: 180,
+                  // alignment: Alignment.center,
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  child: SvgPicture.network(
+                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                  width: 300,
+                  height: 55,
+                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
+                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+
+                    style: TextStyle(color: Colors.black, fontSize: 12),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    shape: StadiumBorder(),
+                    splashColor: Color.fromRGBO(24, 120, 83, 1),
+                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
+                    minWidth: 300,
+                    height: 20,
+                    child: Text(
+                      "Купить",
                       style: TextStyle(fontSize: 20),
                     ), //если корзина не получится сделать просто купить
                   ),
