@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hackpack/main.dart';
+import 'package:hackpack/reg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,19 +13,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(),
+      home: const MyHomePaged(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class MyHomePaged extends StatefulWidget {
+  const MyHomePaged({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyHomePaged> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePaged> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -67,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Future.delayed(const Duration(milliseconds: 1500), () {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const MainContentScreen()),
+          MaterialPageRoute(builder: (context) => const MyHomePage()),
         );
       });
     }
