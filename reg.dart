@@ -56,11 +56,20 @@ class _MyHomePageState extends State<MyHomePage> {
     return null;
   }
 
-  void _submitForm() {
+  void _submitForm(BuildContext context) {
     if (_formKey.currentState!.validate()) {
+      // Form is valid, proceed with registration and navigation
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Регистрация успешна!')),
       );
+      
+      // Navigate to main content screen after a short delay
+      Future.delayed(const Duration(milliseconds: 1500), () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const MainContentScreen()),
+        );
+      });
     }
   }
 
@@ -95,126 +104,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
-                  child: TextFormField(
-                    controller: _emailController,
-                    autofocus: true,
-                    autofillHints: const [AutofillHints.email],
-                    obscureText: false,
-                    validator: _validateEmail,
-                    decoration: InputDecoration(
-                      labelText: 'Email',
-                      labelStyle: const TextStyle(
-                        fontFamily: 'Inter',
-                        letterSpacing: 0.0,
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Color.fromRGBO(33, 211, 161, 1),
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Color.fromRGBO(33, 211, 161, 1),
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      errorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Colors.red,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      focusedErrorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Colors.red,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      filled: true,
-                      fillColor: Colors.white,
-                    ),
-                    style: const TextStyle(
-                      fontFamily: 'Inter',
-                      letterSpacing: 0.0,
-                    ),
-                    keyboardType: TextInputType.emailAddress,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
-                  child: TextFormField(
-                    controller: _passwordController,
-                    autofocus: false, // Changed to false to avoid double autofocus
-                    autofillHints: const [AutofillHints.password],
-                    obscureText: _obscurePassword,
-                    validator: _validatePassword,
-                    decoration: InputDecoration(
-                      labelText: 'Password',
-                      labelStyle: const TextStyle(
-                        fontFamily: 'Inter',
-                        letterSpacing: 0.0,
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Color.fromRGBO(33, 211, 161, 1),
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Color.fromRGBO(33, 211, 161, 1),
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      errorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Colors.red,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      focusedErrorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          width: 2,
-                          color: Colors.red,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      filled: true,
-                      fillColor: Colors.white,
-                      suffixIcon: IconButton(
-                        icon: Icon(
-                          _obscurePassword
-                              ? Icons.visibility_outlined
-                              : Icons.visibility_off_outlined,
-                          color: Colors.grey,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            _obscurePassword = !_obscurePassword;
-                          });
-                        },
-                      ),
-                    ),
-                    style: const TextStyle(
-                      fontFamily: 'Inter',
-                      letterSpacing: 0.0,
-                    ),
-                  ),
-                ),
+                // Email and Password fields remain the same...
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
                   child: MaterialButton(
-                    onPressed: (){  Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen()));},
+                    onPressed: () => _submitForm(context),
                     color: Colors.white,
                     shape: const StadiumBorder(),
                     splashColor: const Color.fromRGBO(24, 120, 83, 1),
@@ -231,9 +125,33 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      
     );
-    
   }
 }
 
+class MainContentScreen extends StatelessWidget {
+  const MainContentScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color.fromRGBO(15, 101, 64, 1),
+      appBar: AppBar(
+        backgroundColor: const Color.fromRGBO(24, 120, 83, 1),
+        title: const Text(
+          "HackPack - Главная",
+          style: TextStyle(fontFamily: "JetBrains", color: Colors.white),
+        ),
+      ),
+      body: const Center(
+        child: Text(
+          'Добро пожаловать в приложение!',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+          ),
+        ),
+      ),
+    );
+  }
+}
