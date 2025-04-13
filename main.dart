@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hackpack/reg.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp1());
 }
 
 class MyApp extends StatelessWidget {
@@ -67,12 +68,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 180,
                   height: 180,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    //выравнивать руками
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
-
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -132,10 +142,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Chtml.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -197,10 +217,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/CCatLight.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -262,10 +292,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/CJavaScpirt.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -327,10 +367,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/CGoogle.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -392,10 +442,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(3, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/CCats.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -457,10 +517,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -522,10 +592,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -587,10 +667,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -652,10 +742,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -717,10 +817,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -782,10 +892,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -847,10 +967,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -912,10 +1042,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -977,10 +1117,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1035,17 +1185,27 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                   alignment: Alignment.topRight,
                   child: Text(
-                    "Кейкап.",
+                    "Кейкапы.",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ),
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/KeykapCat.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1107,10 +1267,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(50, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/brKeykap.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1172,10 +1342,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1213,7 +1393,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            
           ),
           Container(
             padding: const EdgeInsets.all(8),
@@ -1238,10 +1417,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/GetProvods.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1303,10 +1492,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/cup2Colors.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1368,10 +1567,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
-                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  margin: EdgeInsets.fromLTRB(3, 20, 0, 0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/CIknowRec.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1433,10 +1642,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: 180,
                   height: 180,
-                  // alignment: Alignment.center,
                   margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  child: SvgPicture.network(
-                    "https://raw.githubusercontent.com/nezikog/HackPack/a7653d9386dfa691cb5830c6335bf3673a2ba450/it.svg",
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ), // Slightly less than container radius
+                    child: SvgPicture.network(
+                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/CCatCup.svg",
+                      width: 180,
+                      height: 180,
+                    ),
                   ),
                 ),
                 Container(
@@ -1477,7 +1696,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-     
     );
   }
 }
