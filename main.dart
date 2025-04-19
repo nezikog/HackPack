@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 2, 5, 0),
                   alignment: Alignment.topRight,
                   child: Text(
-                    "Футболка. Sudo.\nHighway to hell.",
+                    "Футболка. Sudo.\nHighway to shell.",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ),
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 55,
 
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Обтягивающая футболка с коротким рукавом из мягкого хлопка с добавлением эластана (аналог лайкры). Ткань немного тянется, дышит.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Классическая футболка прямого кроя с коротким рукавом для мужчин из мягкого хлопка плотностью 140-160 г/м2.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -210,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                   alignment: Alignment.topRight,
                   child: Text(
-                    "Футболка. Кот\nпрограммист",
+                    "Худи. Кот\nпрограммист",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ),
@@ -245,7 +245,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Актуальная худи из хлопка с мягким и теплым начесом внутри и принтом, светящимся в темноте.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
