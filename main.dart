@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hackpack/reg.dart';
+import 'package:flutter_application_1/reg.dart';
 
 void main() {
   runApp(const MyApp1());
@@ -521,14 +521,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: Colors.white, width: 2),
-                    
+                    color: Colors.white,
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(
                       10,
                     ), // Slightly less than container radius
                     child: SvgPicture.network(
-                      "https://raw.githubusercontent.com/nezikog/HackPack/b2cfc6784cd6bc4343e787d1b505ecccc8592a0c/kb.svg",
+                      "https://raw.githubusercontent.com/nezikog/HackPack/1fea3d5336098441731825ef99ef690c47b7d2af/kb.svg",
                       width: 180,
                       height: 180,
                     ),
