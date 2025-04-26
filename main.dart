@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_application_1/reg.dart';
+import 'package:flutter_application_project_gr/reg.dart';
 
 void main() {
-  runApp(const MyApp1());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -320,7 +320,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Классическая футболка прямого кроя с коротким рукавом для мужчин из мягкого хлопка плотностью 140-160 г/м2.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -395,7 +395,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Свитшот — удобная трендовая одежда на каждый день из комфортного хлопка с мягким утепленным слоем.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -470,7 +470,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Свитшот — удобная трендовая одежда на каждый день из комфортного хлопка с мягким утепленным слоем. ",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -521,14 +521,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: Colors.white, width: 2),
-                    color: Colors.white,
+                    
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(
                       10,
                     ), // Slightly less than container radius
                     child: SvgPicture.network(
-                      "https://raw.githubusercontent.com/nezikog/HackPack/1fea3d5336098441731825ef99ef690c47b7d2af/kb.svg",
+                      "https://raw.githubusercontent.com/nezikog/HackPack/b2cfc6784cd6bc4343e787d1b505ecccc8592a0c/kb.svg",
                       width: 180,
                       height: 180,
                     ),
@@ -546,7 +546,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Автор обосновывает главный принцип кибербезопасности и определяет стратегии и тактики его реализации.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -622,7 +622,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Незаменимая книга по React — технологии с открытым исходным кодом.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -698,7 +698,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Книга от самого известного в мире криптографа и специалиста по кибербезопасности, профессора Гарварда Брюса Шнайера.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -774,7 +774,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Автор показывает, как буквально с первого урока можно приступить к созданию собственной небольшой программы.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -850,7 +850,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Книга «Код» представляет собой увлекательное путешествие в прошлое  мир электрических устройств и телеграфных машин.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -926,7 +926,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Авторы объединяют теорию с практическими инструкциями, которые вы можете применить на реальном железе.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1002,7 +1002,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    " Руководство расскажет о том, какие архитектурные элементы и подходы привлекают внимание и определяют успех.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
