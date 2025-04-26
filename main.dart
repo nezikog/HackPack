@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_application_project_gr/reg.dart';
+import 'package:flutter_application_1/reg.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp1());
 }
 
 class MyApp extends StatelessWidget {
@@ -521,14 +521,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: Colors.white, width: 2),
-                    
+                    color: Colors.white,
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(
                       10,
                     ), // Slightly less than container radius
                     child: SvgPicture.network(
-                      "https://raw.githubusercontent.com/nezikog/HackPack/b2cfc6784cd6bc4343e787d1b505ecccc8592a0c/kb.svg",
+                      "https://raw.githubusercontent.com/nezikog/HackPack/ceb085bc43ead92257c3d7afb877a2d49ac4d8dc/kb.svg",
                       width: 180,
                       height: 180,
                     ),
@@ -1077,7 +1077,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Новинка микрокомпьютер Raspberry pi 5 8гб - хороший вариант однопалатного компьютера. Это версия почти в два раза мощнее 4 версии.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1152,7 +1152,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Процессор: ATmega328P (DIP) – проверенное решение для стабильной работы. Оперативная память: 2 KB SRAM, флеш-память: 32 KB. Питание: 5V (USB) или 7-12V (DC-разъём).",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1227,7 +1227,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Высокое качество эпоксидная смола DIY прозрачная кошачья лапа Смола колпачок игры с подсветкой RGB ESC WASD Keycap.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1302,7 +1302,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Симпатичный брелок-клавиатура для взрослых и детей, идеально подходящий для любителей механической клавиатуры.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1326,81 +1326,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(16)),
-              color: Color.fromRGBO(33, 211, 161, 1),
-            ),
-            child: Stack(
-              children: [
-                Container(
-                  // margin: EdgeInsets.fromLTRB(5, 5, 0, 0),
-                  child: Text("Категория: Аксессуары"),
-                ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                  alignment: Alignment.topRight,
-                  child: Text(
-                    "Брелок.Мини-\nэлектронная\nклавиатура.",
-                    style: TextStyle(fontWeight: FontWeight.w900),
-                  ),
-                ),
-                Container(
-                  width: 180,
-                  height: 180,
-                  margin: EdgeInsets.fromLTRB(5, 20, 0, 0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.white, width: 2),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(
-                      10,
-                    ), // Slightly less than container radius
-                    child: SvgPicture.network(
-                      "https://raw.githubusercontent.com/nezikog/HackPack/630bc87f87cf46b117bd5e435c744f5b40cd67f0/!!%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8/Cfootbolka.svg",
-                      width: 180,
-                      height: 180,
-                    ),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(8)),
-                  ),
-                  // margin: EdgeInsets.fromLTRB(5, 215, 0, 0),
-                  // padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
-                  width: 300,
-                  height: 55,
-                  margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
-                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
-                  child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
-
-                    style: TextStyle(color: Colors.black, fontSize: 12),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(0, 270, 0, 0),
-                  child: MaterialButton(
-                    onPressed: () {},
-                    color: Colors.white,
-                    shape: StadiumBorder(),
-                    splashColor: Color.fromRGBO(24, 120, 83, 1),
-                    disabledColor: Color.fromRGBO(12, 58, 29, 1),
-                    minWidth: 300,
-                    height: 20,
-                    child: Text(
-                      "Купить",
-                      style: TextStyle(fontSize: 20),
-                    ), //если корзина не получится сделать просто купить
-                  ),
-                ),
-              ],
-            ),
-          ),
+          
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
@@ -1452,7 +1378,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Держатель для проводов, зарядок и кабелей черный. Органайзер для проводов на стол силиконовый.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1527,7 +1453,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Купить кружку в качестве оригинального подарка можно как взрослому человеку, так и подростку на день рождения, новый год.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1602,7 +1528,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Постер из бумаги с ярким принтом. Можно оформить в рамку или повесить без дополнительного оформления.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
@@ -1677,7 +1603,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: EdgeInsets.fromLTRB(0, 210, 0, 0),
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis",
+                    "Кружка - отличный подарок для любителей юмора и веселья. Изготовлена из высококачественной керамики.",
 
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
